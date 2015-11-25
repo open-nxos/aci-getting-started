@@ -1,0 +1,35 @@
+Setup postman Code snippet:
+In order to execute the ACI-REST from postman the login needs to be performed first. The cookie would get generated
+and stored for subsequent execution.
+
+POST-URL : http://SWITCH-IP/api/aaaLogin.json
+Content-Type: application/json
+Cache-Control: no-cache
+POST BODY :
+{
+	"aaaUser" : {
+		"attributes" : {
+			"name" : "SWITCH_USER",
+			"pwd" : "SWITCH_PASSWORD"
+		}
+	}
+}
+
+Executing ACI-REST using postman for first time:
+
+1. Copy POST URL, mentioned in 'setup postman' section above, after replacing SWITCH-IP with IP address of Nexus
+switch .
+2. Select method as POST
+3. Open raw JSON section.
+4. Copy POST-BODY JSON to raw JSON body section of postman.
+5. Replace SWITCH_USERNAME with switch user.
+6. Replace SWITCH_PASSWORD with switch password.
+7. Click send button
+
+Note: If the cookie gets expired you might have to perform the above steps again.
+
+For subsequent REST call:
+
+1. Copy GET URL, after replacing SWITCH-IP with IP address of ACI switch.
+2. Select method as GET
+3. Click send button
