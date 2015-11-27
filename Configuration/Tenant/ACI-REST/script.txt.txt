@@ -1,0 +1,27 @@
+#Configure a tenant
+POST URL: http://SWITCH_IP/api/mo/uni.json
+Content-Type: application/json
+Cache-Control: no-cache
+POST BODY :
+{
+    "fvTenant": {
+        "attributes": {
+            "name": "test_tenant"
+        }
+    }
+}
+
+
+
+#Configure a Bridge domain under specific tenant
+POST URL: http://SWITCH_IP/api/node/mo/uni/tn-test_tenant.json
+Content-Type: application/json
+Cache-Control: no-cache
+POST BODY :
+{
+    "fvBD": {
+        "attributes": {
+            "name": "test_bd"
+        }
+    }
+}

@@ -1,0 +1,11 @@
+#Show a specific tenant details
+
+GET URL: http://SWITCH_IP/api/node/mo/uni/tn-test_tenant.json?rsp-subtree=full
+Cache-Control: no-cache
+
+
+#Show all tenants
+
+GET URL: http://SWITCH_IP/api/mo/uni.json?query-target=subtree&target-subtree-class=fvTenant
+Cache-Control: no-cache
+

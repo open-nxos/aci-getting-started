@@ -1,0 +1,11 @@
+#Show a specific Physical domain details
+
+GET URL: http://SWITCH_IP/api/node/mo/uni/phys-test_phy_dmn.json?rsp-subtree=full
+Cache-Control: no-cache
+
+
+#Show all Physical domains
+
+GET URL: http://SWITCH_IP/api/mo/uni.json?query-target=subtree&target-subtree-class=physDomP
+Cache-Control: no-cache
+

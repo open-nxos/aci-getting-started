@@ -40,6 +40,6 @@ Many of the samples in this directory use the file credentials.py to login to th
 
 ## To execute the sample files
 
-    cd samples
-    Copy the script here 
-    Execute the script. example: python sample_file_name.py
+    1.	cd samples
+    2.	vi example.py (Copy the script here)
+    3.	Execute the script. example: python example.py

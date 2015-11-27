@@ -1,0 +1,22 @@
+#Configure Physical domain and Attach VLAN pool to it
+POST URL: http://SWITCH_IP/api/node/mo/uni/phys-test_phy_dmn.json
+Content-Type: application/json
+Cache-Control: no-cache
+POST BODY :
+{
+    "physDomP": {
+        "attributes": {
+			"name": "test_phy_dmn",
+			"dn": "uni/phys-test_phy_dmn"
+		},
+		"children": [
+			{
+				"infraRsVlanNs": {
+					"attributes": {
+						"tDn": "uni/infra/vlanns-[test_vlan]-dynamic"
+					}
+				}
+			}
+        ]
+    }
+}

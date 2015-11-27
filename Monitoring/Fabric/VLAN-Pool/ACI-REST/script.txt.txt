@@ -1,0 +1,11 @@
+#Show a specific VLAN Pool details
+
+GET URL: http://SWITCH_IP/api/node/mo/uni/infra/vlanns-[test_vlan]-dynamic.json?rsp-subtree=full
+Cache-Control: no-cache
+
+
+#Show all VLAN Pools
+
+GET URL: http://SWITCH_IP/api/node/mo/uni/infra.json?query-target=subtree&target-subtree-class=fvnsVlanInstP
+Cache-Control: no-cache
+
